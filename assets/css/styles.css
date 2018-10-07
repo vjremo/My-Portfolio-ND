@@ -1,0 +1,143 @@
+/* Parts of this CSS are inspired from Joe Masot's YouTube Tutorials.
+https://www.youtube.com/channel/UCZI03QJQ2jttnNZuVqYVEiA */
+
+/*Apply Style to whole document*/
+*, *:before, *:after {
+    box-sizing: border-box;
+    font-family:  Tahoma, 'Segoe UI', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+
+/* GLOBAL STYLES */
+.project-heading{
+    font-size: 4vw;
+}
+.title{
+    font-style: italic;
+}
+.resp-img{
+    height: auto;
+    max-width: 100%;
+}
+.hero-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-heading{
+    font-size: 6vw;
+}
+.text-desc{
+    margin-top: 5px;
+    font-size: 3vw;
+    text-align: center;
+}
+.footer-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+/* GLOBAL STYLES END*/
+
+/*Header */
+.header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header-text{
+    margin: 10px;
+    text-align: center;
+}
+.logo {
+    height: 70px;
+    margin: 10px;
+}
+/*Footer */
+.footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: #1E90FF;
+}
+
+/*Headings */
+.item-heading, .projects{
+    text-align: center;
+}
+
+/*Projects Section */
+.project-heading{
+    margin-top: 30px;
+}
+.project-item{
+    margin: 20px 0;
+}
+
+/*Media Queries Start*/
+@media screen and (min-width : 450px){
+    .text-heading{
+        font-size: 6vw;
+    }
+    .text-desc, .project-link{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 720px){
+    .header{
+        justify-content: space-between;
+        margin: 0 auto 30px;
+        text-align: left;
+    }
+    .header, .project-container{
+        display: flex;
+        max-width: 1340px;
+    }
+    .project-container{
+        margin: 30px auto 0;
+    }
+    .project-item{
+        margin: 20px 20px 20px 0;
+        width: 33.33%;
+    }
+    .project-item:last-child{
+        margin-right: 0;
+    }
+    .project-heading{
+        font-size: 3vw;
+    }
+    .text-heading{
+        font-size: 4vw;
+    }
+    .text-desc, .project-link{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 830px){
+    .project-heading{
+        font-size: 3vw;
+    }
+    .project-container{
+        margin: 10px auto 0;
+    }
+    .project-item{
+        margin: 10px 10px 10px 0;
+    }
+    .text-heading{
+        font-size: 4vw;
+    }
+    .text-desc, .project-link{
+        font-size: 2vw;
+    }
+    
+}
+
+@media screen and (min-width: 1340px){
+    .content,.header{
+        max-width: 1340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*Media Queries End*/
